@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegisterActivity">
+
+    <!--top bar headder-->
+    <android.support.v7.widget.ActionBarContainer
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:src="@drawable/headlogo" />
+    </android.support.v7.widget.ActionBarContainer>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topbar">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:id="@+id/parent_rellyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!-- visitor image section-->
+            <RelativeLayout
+                android:id="@+id/center_profileimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="45dp"
+                    android:src="@drawable/addprofile" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:padding="10dp"
+                    android:id="@+id/uploadimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_image"
+                    android:text="Click here to Confirm Image"
+                    android:textAlignment="center"
+                    android:textColor="#420ede"
+
+                    />
+            </RelativeLayout>
+
+            <!--visitor detail section-->
+            <RelativeLayout
+                android:id="@+id/detail_sec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/center_profileimage">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="10dp"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <!--name sec-->
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textStyle="bold" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint="enter name"
+                            android:singleLine="true" />
+
+                        <!--Mobile no-->
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile No"
+                            android:textStyle="bold" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/phoneno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:digits="0123456789+"
+                            android:hint="enter mobile no"
+                            android:inputType="phone"
+                            android:maxLength="13"
+                            android:singleLine="true" />
+
+                        <!--no of visitors-->
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textStyle="bold" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:hint=" enter email"
+                            android:inputType="textEmailSubject"
+                            android:singleLine="true" />
+
+
+                        <!--multiple selection autocompleate text-->
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Address"
+                            android:textStyle="bold" />
+
+                        <android.support.v7.widget.AppCompatMultiAutoCompleteTextView
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter address single line"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+            <RelativeLayout
+               android:layout_below="@+id/detail_sec"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Register"
+                android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+
+        />
+
+</RelativeLayout>

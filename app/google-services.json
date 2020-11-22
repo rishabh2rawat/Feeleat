@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1061003667325",
+    "firebase_url": "https://feeleat-71709.firebaseio.com",
+    "project_id": "feeleat-71709",
+    "storage_bucket": "feeleat-71709.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061003667325:android:178d577ca89eaa10",
+        "android_client_info": {
+          "package_name": "com.rishabhrawat.feeleat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061003667325-32kigd1uevq02taqul15md0nlpeoragi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rishabhrawat.feeleat",
+            "certificate_hash": "2027f2f5dcd89c3111e3d1d95aea6e38c76f063b"
+          }
+        },
+        {
+          "client_id": "1061003667325-br4mcba7qacdo8q6qpdsfr442nvu7874.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFdQD2znMYRvcaVUI1tMtJkdRLx17M1KA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061003667325-br4mcba7qacdo8q6qpdsfr442nvu7874.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
